@@ -7,12 +7,20 @@
 //
 
 import UIKit
+import Appodeal
 
 class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+//        Appodeal.showAd(AppodealShowStyle.interstitial, rootViewController: self)
+//        Appodeal.showAd(AppodealShowStyle.bannerBottom, rootViewController: self)
+        Appodeal.showAd(AppodealShowStyle.bannerBottom, rootViewController: self);
+//        Appodeal.showAd(AppodealShowStyle.bannerTop, rootViewController: self)
+
+//        let showStyles: AppodealShowStyle = [.interstitial, .rewardedVideo]
+//        Appodeal.showAd(showStyles, rootViewController: self)
     }
 
     override func didReceiveMemoryWarning() {
